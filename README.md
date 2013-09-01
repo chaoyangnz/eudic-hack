@@ -5,8 +5,11 @@ Eudic 欧路词典 windows版
 3. debug模式，可以查看字典显示的源代码html
 
 各种伪协议：
-cmd://speechword   自带默认真人发音
+cmd://speechword   自带默认真人发音 cmd://Speak/xxx 给某个单词发音
 
 sound://url...    字典的音频资源
 
 eures://url...  字典里的图片资源等
+
+
+res://C:\Program Files (x86)\eudic\dat\res\Resource.dll/speak.gif
