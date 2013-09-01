@@ -33,26 +33,22 @@ e.custom(start,val,"");}});return true;});},queue:function(type,fn){if(jQuery.is
 
 
 $(function() {
-	//添加“查看源代码”（调试和hack用)
-	var banner = document.getElementById('dic_banner');
-	var a = document.createElement("a"); 
-	a.href = "javascript:view_source()"; 
-	a.innerHTML = 'View Source'; 
-	a.style.color = "grey"; 
-	a.style.fontSize = "0.7em"; 
-	banner.appendChild(a);
+	//查词界面和取词界面源文件分别在:
+	//C:/Users/Jock/AppData/Roaming/Francochinois/eudic/tmp/1.html
+	//C:/Users/Jock/AppData/Roaming/Francochinois/eudic/tmp/2.html
 
+	
 	//将发音，换成oxford英音. 请关掉自动发音
 	var oxford = $('a[href^="sound://uk_pron/"]:first')
+
 	if(oxford.length > 0) {
-		
 		var br = oxford.attr('href');
-		$('a[href="cmd://speakword"]').each(function() {
+		//查词界面//取词界面
+		$('a[href="cmd://speakword"], a[href^="cmd://Speak/"]').each(function() {
 			$(this).attr('href', br);
 
 			this.click();//模拟自动发音
 		});
-
 	}
 	
 })
