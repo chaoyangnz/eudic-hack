@@ -54,13 +54,6 @@ $(function() {
 })
 
 
-function view_source() {
-	var newwindow=window.open("","","width=600 height=600");//打开一个新的页面
-    newwindow.document.write(document.body.innerHTML);//将HTM代码写入到新的页里面去
-    newwindow.document.close();//关闭文本流,
-}
-
-
 function clearAllHighlight()
 {
     document.execCommand("SelectAll");
