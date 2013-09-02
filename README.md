@@ -13,3 +13,10 @@ eures://url...  字典里的图片资源等
 
 
 res://C:\Program Files (x86)\eudic\dat\res\Resource.dll/speak.gif
+
+
+另附：mdict文件格式的分析和处理
+
+https://bitbucket.org/xwang/mdict-analysis
+
+https://github.com/ilius/pyglossary 
